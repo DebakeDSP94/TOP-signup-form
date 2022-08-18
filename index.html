@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img
+          class="fern"
+          src="images/halie-west-25xggax4bSA-unsplash.jpg"
+          alt="leafy ferns in the forest"
+        />
+        <div class="odin-logo">
+          <img class="logo" src="images/odin-lined.png" alt="Odin logo" />
+          <div class="odin-text">
+            <span>ODIN</span>
+          </div>
+        </div>
+
+        <p class="credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            class="photo-link"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            class="photo-link"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="header-text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />Sign up <em>now</em> to get started.
+          </p>
+          <p></p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form>
+          <div class="form-body">
+            <p class="form-msg">Let's do this!</p>
+            <div class="formrow">
+              <div class="form-element">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  for="first-name"
+                  id="first-name"
+                  name="first-name"
+                />
+              </div>
+              <div class="form-element">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  for="last-name"
+                  id="last-name"
+                  name="last-name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="formrow">
+              <div class="form-element">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  for="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-element">
+                <label for="phone">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  for="phone"
+                  id="phone"
+                  name="phone"
+                  required
+                  pattern="[\d]{3}[.- ][\d]{3}[.- ][\d]{4}|[\d]{10}"
+                />
+              </div>
+            </div>
+            <div class="formrow">
+              <div class="form-element">
+                <label for="password"
+                  ><span>PASSWORD</span>
+                  <input
+                    type="password"
+                    for="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                  <span class="error-msg" id="error-msg"></span>
+                </label>
+              </div>
+              <div class="form-element">
+                <label for="password-conf"
+                  ><span>CONFIRM PASSWORD</span>
+                  <input
+                    type="password"
+                    for="password-conf"
+                    id="password-conf"
+                    name="password-conf"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="submit-container">
+            <button type="submit" class="submit">Create Account</button>
+          </div>
+          <div class="log-in">
+            <p>
+              Already have an account?
+              <span><a href="" class="log-link">Log in</a></span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
